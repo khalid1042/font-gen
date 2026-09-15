@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import ConversorTool from './ConversorTool';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Conversor de Letras Online | Convierte Texto para Copiar y Pegar",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "/conversor-de-letras/",
   },
   openGraph: {
+    images: [{ url: '/images/conversor_letras.png', width: 1200, height: 630, alt: 'Conversor de Letras' }],
     title: "Conversor de Letras Online",
     description: "Convierte texto normal en múltiples estilos tipográficos para copiar y pegar.",
     url: "https://letrasbonitas.example.com/conversor-de-letras/",
@@ -41,6 +43,9 @@ export default function ConversorDeLetrasPage() {
             <p className={styles.subtitle}>
               Convierte tu texto en letras bonitas y estilos diferentes. Convierte texto normal en fuentes cursivas, negritas, góticas, decorativas y mucho más para copiar y pegar al instante.
             </p>
+            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
+              <Image src="/images/conversor_letras.png" alt="Conversor de Letras" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            </div>
           </div>
         </div>
       </section>
@@ -173,6 +178,24 @@ export default function ConversorDeLetrasPage() {
               <summary>¿Cuál es la diferencia entre una fuente y Unicode?</summary>
               <p>Una fuente modifica el aspecto visual de letras estándar en un programa local, mientras que Unicode sustituye los caracteres por símbolos internacionales universales que se pueden copiar entre aplicaciones.</p>
             </details>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* Directorio de la Categoría (SEO Hub) */}
+      <section className={styles.section}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Directorio de Conversor de Letras</h2>
+          <div className={styles.directoryGrid} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+            <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Letras para Copiar y Pegar</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Variedad de letras fáciles de copiar y pegar en cualquier lugar.</p>
+            </Link>
+            <Link href="/conversor-de-letras/texto-con-estilos/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Texto con Estilos</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Aplica estilos únicos y estéticos a tus textos al instante.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import InstagramFontsExplorer from './InstagramFontsExplorer';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Letras para Instagram | Fuentes y Textos para Copiar",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "/letras-para-instagram/",
   },
   openGraph: {
+    images: [{ url: '/images/letras_instagram.png', width: 1200, height: 630, alt: 'Letras para Instagram' }],
     title: "Letras para Instagram | Fuentes y Textos para Copiar",
     description: "Generador de fuentes y letras bonitas para la bio, nombre y captions de Instagram.",
     url: "https://letrasbonitas.example.com/letras-para-instagram/",
@@ -41,6 +43,9 @@ export default function LetrasParaInstagramPage() {
             <p className={styles.subtitle}>
               Crea letras y textos con estilos diferentes para tu perfil de Instagram. Escribe tu texto, elige un estilo y cópialo para usarlo en tu bio, nombre, publicaciones, captions o comentarios.
             </p>
+            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
+              <Image src="/images/letras_instagram.png" alt="Letras para Instagram" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            </div>
             <div className={styles.heroActions}>
               <a href="#generador-instagram" className={styles.ctaBtn}>
                 Crear letras para Instagram

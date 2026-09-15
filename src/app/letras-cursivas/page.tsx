@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Generator from '../../components/Generator/Generator';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Letras Cursivas para Copiar y Pegar | Letras Bonitas",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "/letras-cursivas/",
   },
   openGraph: {
+    images: [{ url: '/images/letras_cursivas.png', width: 1200, height: 630, alt: 'Letras Cursivas' }],
     title: "Letras Cursivas para Copiar y Pegar",
     description: "Generador de letras cursivas elegantes para copiar y pegar.",
     url: "https://letrasbonitas.example.com/letras-cursivas/",
@@ -41,6 +43,9 @@ export default function LetrasCursivas() {
             <p className={styles.subtitle}>
               Genera elegantes letras cursivas para copiar y pegar online. Escribe tu texto, elige un estilo y cópialo fácilmente para usarlo donde quieras.
             </p>
+            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
+              <Image src="/images/letras_cursivas.png" alt="Letras Cursivas" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            </div>
           </div>
         </div>
       </section>

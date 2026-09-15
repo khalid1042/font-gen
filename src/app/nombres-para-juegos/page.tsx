@@ -3,6 +3,7 @@ import Link from 'next/link';
 import GamingNameGenerator from './GamingNameGenerator';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Nombres para Juegos | Generador de Nombres Gamer',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     canonical: '/nombres-para-juegos/',
   },
   openGraph: {
+    images: [{ url: '/images/nombres_juegos.png', width: 1200, height: 630, alt: 'Nombres para Juegos' }],
     title: 'Nombres para Juegos | Generador de Nombres Gamer',
     description: 'Genera nombres para juegos originales, chidos, pro y con estilo. Crea tu nickname gamer, personalízalo con símbolos y cópialo fácilmente.',
     url: '/nombres-para-juegos/',
@@ -76,6 +78,9 @@ export default function NombresParaJuegosPage() {
             <p className={styles.subtitle}>
               Crea nombres para juegos originales, chidos, pro y con estilo. Genera tu nickname gamer, personalízalo con letras y símbolos y cópialo fácilmente.
             </p>
+            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
+              <Image src="/images/nombres_juegos.png" alt="Nombres para Juegos" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            </div>
             <div className={styles.heroStats}>
               <div className={styles.heroStatItem}>
                 <span className={styles.heroStatIcon}>⚡</span>

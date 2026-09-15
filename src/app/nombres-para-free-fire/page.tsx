@@ -3,6 +3,7 @@ import Link from 'next/link';
 import FreeFireNameExplorer from './FreeFireNameExplorer';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Nombres para Free Fire | Generador de Nombres y Nicknames',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     canonical: '/nombres-para-free-fire/',
   },
   openGraph: {
+    images: [{ url: '/images/nombres_free_fire.png', width: 1200, height: 630, alt: 'Nombres para Free Fire' }],
     title: 'Nombres para Free Fire | Generador de Nombres y Nicknames',
     description: 'Crea nombres para Free Fire con estilos, símbolos y letras especiales. Genera tu nickname, personalízalo y cópialo fácilmente para usarlo en Free Fire.',
     url: '/nombres-para-free-fire/',
@@ -76,6 +78,9 @@ export default function NombresParaFreeFirePage() {
             <p className={styles.subtitle}>
               Crea nombres únicos, insanos y decorados para Free Fire. Genera tu nickname gamer, añade estilos y símbolos, y cópialo en un clic.
             </p>
+            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
+              <Image src="/images/nombres_free_fire.png" alt="Nombres para Free Fire" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            </div>
             <div className={styles.heroStats}>
               <div className={styles.heroStatItem}>
                 <span className={styles.heroStatIcon}>⚡</span>
