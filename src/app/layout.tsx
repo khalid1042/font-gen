@@ -41,7 +41,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main style={{ paddingTop: '4rem' }}>
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
