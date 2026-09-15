@@ -74,46 +74,44 @@
   --card-orange-accent: #f97316;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-    
-    --surface: #1e293b;
-    --border: #334155;
-    --border-hover: #475569;
-    
-    --text-muted: #94a3b8;
-    --text-light: #64748b;
-    
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
+[data-theme='dark'] {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  
+  --surface: #1e293b;
+  --border: #334155;
+  --border-hover: #475569;
+  
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
 
-    /* Card Section Color Themes (Dark Mode) */
-    --card-indigo-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-indigo-border: rgba(99, 102, 241, 0.4);
+  /* Card Section Color Themes (Dark Mode) */
+  --card-indigo-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-indigo-border: rgba(99, 102, 241, 0.4);
 
-    --card-rose-bg: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-rose-border: rgba(244, 63, 94, 0.4);
+  --card-rose-bg: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-rose-border: rgba(244, 63, 94, 0.4);
 
-    --card-amber-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-amber-border: rgba(245, 158, 11, 0.4);
+  --card-amber-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-amber-border: rgba(245, 158, 11, 0.4);
 
-    --card-emerald-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-emerald-border: rgba(16, 185, 129, 0.4);
+  --card-emerald-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-emerald-border: rgba(16, 185, 129, 0.4);
 
-    --card-violet-bg: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-violet-border: rgba(139, 92, 246, 0.4);
+  --card-violet-bg: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-violet-border: rgba(139, 92, 246, 0.4);
 
-    --card-cyan-bg: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-cyan-border: rgba(6, 182, 212, 0.4);
+  --card-cyan-bg: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-cyan-border: rgba(6, 182, 212, 0.4);
 
-    --card-pink-bg: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-pink-border: rgba(236, 72, 153, 0.4);
+  --card-pink-bg: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-pink-border: rgba(236, 72, 153, 0.4);
 
-    --card-orange-bg: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
-    --card-orange-border: rgba(249, 115, 22, 0.4);
-  }
+  --card-orange-bg: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+  --card-orange-border: rgba(249, 115, 22, 0.4);
 }
 
 * {

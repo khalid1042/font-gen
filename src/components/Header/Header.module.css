@@ -8,10 +8,14 @@
   border-bottom: 1px solid var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  .header {
-    background-color: rgba(15, 23, 42, 0.9);
-  }
+:global([data-theme='dark']) .header {
+  background-color: rgba(15, 23, 42, 0.9);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .container {
