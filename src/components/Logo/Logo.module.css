@@ -1,0 +1,26 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.logo:hover .logoIcon {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.logoText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}

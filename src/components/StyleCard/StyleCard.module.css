@@ -1,0 +1,87 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-hover);
+}
+
+.header {
+  padding: 0.75rem 1rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  color: var(--foreground);
+  word-break: break-word;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.copyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-top: 1px solid var(--border);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  width: 100%;
+}
+
+.copyButton:hover {
+  background-color: var(--primary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .copyButton:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+  }
+}
+
+.copyButton.copied {
+  color: var(--success);
+  background-color: var(--success-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .copyButton.copied {
+    background-color: rgba(16, 185, 129, 0.1);
+  }
+}

@@ -1,34 +1,119 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  
+  /* Primary Colors */
+  --primary: #6366f1; /* Indigo */
+  --primary-hover: #4f46e5;
+  --primary-light: #e0e7ff;
+  
+  /* Secondary / Accents */
+  --secondary: #ec4899; /* Pink */
+  --accent: #8b5cf6; /* Violet */
+  
+  /* UI Colors */
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --border-hover: #cbd5e1;
+  
+  /* Text */
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  
+  /* Status */
+  --success: #10b981;
+  --success-bg: #d1fae5;
+  
+  /* Radius & Shadows */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Card Section Color Themes (Light Mode) */
+  --card-indigo-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.06) 0%, rgba(238, 242, 255, 0.8) 100%);
+  --card-indigo-border: rgba(99, 102, 241, 0.3);
+  --card-indigo-accent: #6366f1;
+
+  --card-rose-bg: linear-gradient(135deg, rgba(244, 63, 94, 0.06) 0%, rgba(255, 241, 242, 0.8) 100%);
+  --card-rose-border: rgba(244, 63, 94, 0.3);
+  --card-rose-accent: #f43f5e;
+
+  --card-amber-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.07) 0%, rgba(254, 243, 199, 0.8) 100%);
+  --card-amber-border: rgba(245, 158, 11, 0.35);
+  --card-amber-accent: #f59e0b;
+
+  --card-emerald-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(236, 253, 245, 0.8) 100%);
+  --card-emerald-border: rgba(16, 185, 129, 0.3);
+  --card-emerald-accent: #10b981;
+
+  --card-violet-bg: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(245, 243, 255, 0.8) 100%);
+  --card-violet-border: rgba(139, 92, 246, 0.3);
+  --card-violet-accent: #8b5cf6;
+
+  --card-cyan-bg: linear-gradient(135deg, rgba(6, 182, 212, 0.06) 0%, rgba(236, 254, 255, 0.8) 100%);
+  --card-cyan-border: rgba(6, 182, 212, 0.3);
+  --card-cyan-accent: #06b6d4;
+
+  --card-pink-bg: linear-gradient(135deg, rgba(236, 72, 153, 0.06) 0%, rgba(253, 242, 248, 0.8) 100%);
+  --card-pink-border: rgba(236, 72, 153, 0.3);
+  --card-pink-accent: #ec4899;
+
+  --card-orange-bg: linear-gradient(135deg, rgba(249, 115, 22, 0.06) 0%, rgba(255, 247, 237, 0.8) 100%);
+  --card-orange-border: rgba(249, 115, 22, 0.3);
+  --card-orange-accent: #f97316;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    
+    --surface: #1e293b;
+    --border: #334155;
+    --border-hover: #475569;
+    
+    --text-muted: #94a3b8;
+    --text-light: #64748b;
+    
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
+
+    /* Card Section Color Themes (Dark Mode) */
+    --card-indigo-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-indigo-border: rgba(99, 102, 241, 0.4);
+
+    --card-rose-bg: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-rose-border: rgba(244, 63, 94, 0.4);
+
+    --card-amber-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-amber-border: rgba(245, 158, 11, 0.4);
+
+    --card-emerald-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-emerald-border: rgba(16, 185, 129, 0.4);
+
+    --card-violet-bg: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-violet-border: rgba(139, 92, 246, 0.4);
+
+    --card-cyan-bg: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-cyan-border: rgba(6, 182, 212, 0.4);
+
+    --card-pink-bg: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-pink-border: rgba(236, 72, 153, 0.4);
+
+    --card-orange-bg: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --card-orange-border: rgba(249, 115, 22, 0.4);
   }
-}
-
-html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -37,13 +122,71 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a:hover {
+  color: var(--primary);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
