@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import CopyPasteLettersExplorer from './CopyPasteLettersExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Letras para Copiar y Pegar | Textos Bonitos y Estilos para Copiar",
@@ -162,61 +163,10 @@ export default function LetrasParaCopiarYPegarPage() {
         </div>
       </section>
 
-      {/* Related Tools Cards Section */}
+      {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedSection}>
-            <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-            <div className={styles.relatedGrid}>
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Conversor de Letras</h3>
-                <p className={styles.relatedCardDesc}>La herramienta principal para convertir cualquier texto en múltiples categorías tipográficas.</p>
-                <Link href="/conversor-de-letras/" className={styles.relatedCardLink}>
-                  Ir al Conversor →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Bonitas</h3>
-                <p className={styles.relatedCardDesc}>Generador principal del sitio para crear textos bonitos y decorados al instante.</p>
-                <Link href="/" className={styles.relatedCardLink}>
-                  Ir a la Homepage →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Cursivas</h3>
-                <p className={styles.relatedCardDesc}>Generador especializado en letras manuscritas, caligrafía y cursivas elegantes.</p>
-                <Link href="/letras-cursivas/" className={styles.relatedCardLink}>
-                  Ir a Letras Cursivas →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Abecedario Cursivo</h3>
-                <p className={styles.relatedCardDesc}>Explora el alfabeto de la A a la Z en mayúsculas y minúsculas con tarjetas individuales.</p>
-                <Link href="/letras-cursivas/abecedario-cursivo/" className={styles.relatedCardLink}>
-                  Ver Abecedario →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Cursivas para Copiar y Pegar</h3>
-                <p className={styles.relatedCardDesc}>Colección exclusiva de frases y letras cursivas listas para copiar al instante.</p>
-                <Link href="/letras-cursivas/letras-cursivas-para-copiar-y-pegar/" className={styles.relatedCardLink}>
-                  Ver Frases Cursivas →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Cursivas Elegantes</h3>
-                <p className={styles.relatedCardDesc}>Diseños sofisticados para nombres y perfiles con toques caligráficos elegantes.</p>
-                <Link href="/letras-cursivas/letras-cursivas-elegantes/" className={styles.relatedCardLink}>
-                  Ver Estilos Elegantes →
-                </Link>
-              </div>
-            </div>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

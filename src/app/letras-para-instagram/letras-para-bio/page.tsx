@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BioFontsExplorer from './BioFontsExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Letras para Bio de Instagram | Textos Bonitos para Copiar',
@@ -251,43 +252,12 @@ export default function LetrasParaBioPage() {
           </div>
         </section>
 
-        {/* Related Pages Section */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Letras para Instagram</h3>
-              <p>Explora la guía principal y el generador completo de fuentes para la plataforma de Instagram.</p>
-              <Link href="/letras-para-instagram/" className="card-link">
-                Ver fuente principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Copiar y Pegar</h3>
-              <p>Descubre cientos de estilos tipográficos y símbolos rápidos listos para usar en tus publicaciones.</p>
-              <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className="card-link">
-                Explorar catálogo →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Texto con Estilos</h3>
-              <p>Compara y prueba frases completas en docenas de estilos decorativos y tipografías alfanuméricas.</p>
-              <Link href="/conversor-de-letras/texto-con-estilos/" className="card-link">
-                Ver textos estilizados →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Genera estilos caligráficos, manuscritos y fuentes manuscritas elegantes para tus redes sociales.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver estilos cursivos →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

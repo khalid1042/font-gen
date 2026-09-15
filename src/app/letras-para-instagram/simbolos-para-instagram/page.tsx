@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InstagramSymbolsExplorer from './InstagramSymbolsExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Símbolos para Instagram | Símbolos Bonitos para Copiar',
@@ -272,43 +273,12 @@ export default function SimbolosParaInstagramPage() {
           </div>
         </section>
 
-        {/* Related Pages Section */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Letras para Instagram</h3>
-              <p>Generador principal de letras bonitas y fuentes tipográficas para la plataforma de Instagram.</p>
-              <Link href="/letras-para-instagram/" className="card-link">
-                Ver fuente principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Bio</h3>
-              <p>Frases, plantillas y fuentes tipográficas optimizadas para la biografía de tu perfil.</p>
-              <Link href="/letras-para-instagram/letras-para-bio/" className="card-link">
-                Ver letras para bio →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Nombres</h3>
-              <p>Convierte tu nombre en estilos elegantes, cursivos y decorativos para destacar tu perfil.</p>
-              <Link href="/letras-para-instagram/letras-para-nombres/" className="card-link">
-                Ver letras para nombres →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Copiar y Pegar</h3>
-              <p>Catálogo extenso con cientos de estilos de letras alfanuméricas listas para usar.</p>
-              <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className="card-link">
-                Explorar catálogo →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

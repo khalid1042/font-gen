@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ClanNamesExplorer from './ClanNamesExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Nombres para Clanes de Free Fire | Clanes Pro y Originales',
@@ -324,43 +325,12 @@ export default function ClanesPage() {
           </div>
         </section>
 
-        {/* Related Tools */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>Páginas y herramientas relacionadas</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Generador de Nombres para Free Fire</h3>
-              <p>Accede a la herramienta principal para personalizar totalmente tu apodo o clan con tipografías y adornos.</p>
-              <Link href="/nombres-para-free-fire/" className="card-link">
-                Ir al generador principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres para Free Fire</h3>
-              <p>Explora el catálogo general con miles de ideas de nombres individuales.</p>
-              <Link href="/nombres-para-free-fire/nombres/" className="card-link">
-                Ver nombres generales →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Apodos para Free Fire</h3>
-              <p>Descubre nicknames, sobrenombres y alias gamer para jugadores individuales.</p>
-              <Link href="/nombres-para-free-fire/apodos/" className="card-link">
-                Ver apodos →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres Insanos para Free Fire</h3>
-              <p>Colección de nombres salvajes, oscuros y agresivos para destacar en partida.</p>
-              <Link href="/nombres-para-free-fire/nombres-insanos/" className="card-link">
-                Ver nombres insanos →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

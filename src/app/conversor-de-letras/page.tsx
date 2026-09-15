@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import ConversorTool from './ConversorTool';
 import styles from './page.module.css';
+import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Conversor de Letras Online | Convierte Texto para Copiar y Pegar",
@@ -179,26 +180,7 @@ export default function ConversorDeLetrasPage() {
       {/* Cross-Silo Internal Links Block */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedBox}>
-            <h3>Explora más herramientas y silos</h3>
-            <div className={styles.relatedLinksList}>
-              <Link href="/letras-cursivas/" className={styles.relatedLink}>
-                Generador de Letras Cursivas →
-              </Link>
-              <Link href="/letras-cursivas/abecedario-cursivo/" className={styles.relatedLink}>
-                Abecedario Cursivo A-Z →
-              </Link>
-              <Link href="/letras-cursivas/letras-cursivas-para-copiar-y-pegar/" className={styles.relatedLink}>
-                Letras Cursivas para Copiar y Pegar →
-              </Link>
-              <Link href="/letras-cursivas/letras-cursivas-elegantes/" className={styles.relatedLink}>
-                Letras Cursivas Elegantes →
-              </Link>
-              <Link href="/" className={styles.relatedLink}>
-                Página Principal - Letras Bonitas →
-              </Link>
-            </div>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

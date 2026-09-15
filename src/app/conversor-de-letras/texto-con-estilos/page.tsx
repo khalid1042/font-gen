@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import StyledTextExplorer from './StyledTextExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Texto con Estilos | Crea Textos Estilizados para Copiar",
@@ -205,53 +206,10 @@ export default function TextoConEstilosPage() {
         </div>
       </section>
 
-      {/* Related Content Section */}
+      {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedSection}>
-            <h2 className={styles.sectionTitle}>También puede interesarte</h2>
-            <div className={styles.relatedGrid}>
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Conversor de Letras</h3>
-                <p className={styles.relatedCardDesc}>Herramienta principal para convertir texto a múltiples categorías tipográficas.</p>
-                <Link href="/conversor-de-letras/" className={styles.relatedCardLink}>
-                  Ir al Conversor →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras para Copiar y Pegar</h3>
-                <p className={styles.relatedCardDesc}>Colección rápida de letras y plantillas decorativas listas para copiar al instante.</p>
-                <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className={styles.relatedCardLink}>
-                  Ver Letras para Copiar →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Bonitas</h3>
-                <p className={styles.relatedCardDesc}>Generador principal del sitio web con fuentes variadas para redes sociales.</p>
-                <Link href="/" className={styles.relatedCardLink}>
-                  Ir a la Homepage →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Letras Cursivas</h3>
-                <p className={styles.relatedCardDesc}>Sección dedicada exclusivamente a estilos caligráficos y letras manuscritas.</p>
-                <Link href="/letras-cursivas/" className={styles.relatedCardLink}>
-                  Ir a Letras Cursivas →
-                </Link>
-              </div>
-
-              <div className={styles.relatedCard}>
-                <h3 className={styles.relatedCardTitle}>Abecedario Cursivo</h3>
-                <p className={styles.relatedCardDesc}>Explora el abecedario de la A a la Z en mayúsculas y minúsculas con tarjetas individuales.</p>
-                <Link href="/letras-cursivas/abecedario-cursivo/" className={styles.relatedCardLink}>
-                  Ver Abecedario →
-                </Link>
-              </div>
-            </div>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

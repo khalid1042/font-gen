@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ApodosExplorer from './ApodosExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Apodos para Free Fire | Nicknames Chidos, Pro y Originales',
@@ -317,43 +318,12 @@ export default function ApodosPage() {
           </div>
         </section>
 
-        {/* Related Content Cards */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>Herramientas y páginas relacionadas</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Generador de Nombres para Free Fire</h3>
-              <p>Accede a la herramienta principal para crear y personalizar apodos con fuentes y símbolos al detalle.</p>
-              <Link href="/nombres-para-free-fire/" className="card-link">
-                Ir al generador principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres para Free Fire</h3>
-              <p>Explora el catálogo general con miles de ideas de nombres para tu perfil de jugador.</p>
-              <Link href="/nombres-para-free-fire/nombres/" className="card-link">
-                Ver nombres generales →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres Insanos para Free Fire</h3>
-              <p>Descubre apodos con estilos salvajes, oscuros, agresivos e intimidantes.</p>
-              <Link href="/nombres-para-free-fire/nombres-insanos/" className="card-link">
-                Ver nombres insanos →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Nombres</h3>
-              <p>Crea tipografías estilizadas para nombres de redes sociales y perfiles gamer.</p>
-              <Link href="/letras-para-instagram/letras-para-nombres/" className="card-link">
-                Ver letras para nombres →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

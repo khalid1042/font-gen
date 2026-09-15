@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import NameFontsExplorer from './NameFontsExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Letras para Nombres | Nombres Bonitos para Instagram',
@@ -242,43 +243,12 @@ export default function LetrasParaNombresPage() {
           </div>
         </section>
 
-        {/* Related Pages Section */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Letras para Instagram</h3>
-              <p>Crea textos y letras personalizadas para diferentes partes de la plataforma de Instagram.</p>
-              <Link href="/letras-para-instagram/" className="card-link">
-                Ver fuente principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Bio</h3>
-              <p>Crea textos, frases, plantillas y estilos optimizados para la biografía de tu perfil.</p>
-              <Link href="/letras-para-instagram/letras-para-bio/" className="card-link">
-                Ver letras para bio →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Genera estilos caligráficos y fuentes manuscritas elegantes para tus redes sociales.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver estilos cursivos →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Copiar y Pegar</h3>
-              <p>Explora un catálogo extenso de diferentes estilos de letras listas para copiar.</p>
-              <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className="card-link">
-                Explorar catálogo →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

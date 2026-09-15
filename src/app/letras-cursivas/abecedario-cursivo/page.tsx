@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import AbecedarioExplorer from './AbecedarioExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Abecedario Cursivo A-Z para Copiar y Pegar | Letras Bonitas",
@@ -175,20 +176,10 @@ export default function AbecedarioCursivoPage() {
         </div>
       </section>
 
-      {/* Related Pages (Parent pillar + Homepage) */}
+      {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedBox}>
-            <h3>Páginas relacionadas</h3>
-            <div className={styles.relatedLinksList}>
-              <Link href="/letras-cursivas/" className={styles.relatedLink}>
-                Descubre más estilos en nuestro generador de Letras Cursivas →
-              </Link>
-              <Link href="/" className={styles.relatedLink}>
-                Volver a la página principal de Letras Bonitas →
-              </Link>
-            </div>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

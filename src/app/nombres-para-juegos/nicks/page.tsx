@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import NicksExplorer from './NicksExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Nicks para Juegos | Nicknames Gamer para Copiar',
@@ -205,43 +206,12 @@ export default function NicksPage() {
           </div>
         </section>
 
-        {/* Related Supporting Pages */}
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Secciones y herramientas relacionadas</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Generador de Nombres para Juegos</h3>
-              <p>Página principal del silo gamer con herramientas de transformación y personalización total.</p>
-              <Link href="/nombres-para-juegos/" className="card-link">
-                Ir al generador principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Apodos para Juegos</h3>
-              <p>Encuentra apodos y aliases gamer para crear una identidad fácil de recordar.</p>
-              <Link href="/nombres-para-juegos/apodos/" className="card-link">
-                Explorar apodos →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres para Clanes</h3>
-              <p>Genera nombres de equipos, escuadras y clan tags competitivos.</p>
-              <Link href="/nombres-para-juegos/nombres-para-clanes/" className="card-link">
-                Ver nombres para clanes →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Nombres Chidos para Juegos</h3>
-              <p>Descubre combinaciones gamer modernas, estéticas y atractivas.</p>
-              <Link href="/nombres-para-juegos/nombres-chidos/" className="card-link">
-                Ver nombres chidos →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

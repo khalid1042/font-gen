@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 import Generator from '../../components/Generator/Generator';
 import styles from './page.module.css';
+import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Letras Cursivas para Copiar y Pegar | Letras Bonitas",
@@ -150,15 +151,10 @@ export default function LetrasCursivas() {
         </div>
       </section>
 
-      {/* Related links block */}
+      {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedBox}>
-            <h3>Sigue explorando</h3>
-            <Link href="/" className={styles.relatedLink}>
-              Volver al Generador Principal de Letras Bonitas →
-            </Link>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

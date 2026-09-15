@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import GamingNameGenerator from './GamingNameGenerator';
 import styles from './page.module.css';
+import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Nombres para Juegos | Generador de Nombres Gamer',
@@ -269,35 +270,12 @@ export default function NombresParaJuegosPage() {
           </div>
         </section>
 
-        {/* Related Tools */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>Herramientas relacionadas</h2>
-          <div className="grid grid-3">
-            <div className="card">
-              <h3>Generador de Nombres para Free Fire</h3>
-              <p>Herramienta especializada con adornos y estilos optimizados para Free Fire.</p>
-              <Link href="/nombres-para-free-fire/" className="card-link">
-                Ir al generador de Free Fire →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Conversor de Letras</h3>
-              <p>Transforma cualquier texto con decenas de fuentes y alfabetos Unicode.</p>
-              <Link href="/conversor-de-letras/" className="card-link">
-                Ir al conversor de letras →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Crea tipografías manuscritas y caligráficas para redes sociales.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver letras cursivas →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import FreeFireNameExplorer from './FreeFireNameExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Nombres para Free Fire | Generador de Nombres y Nicknames',
@@ -246,43 +247,12 @@ export default function NombresParaFreeFirePage() {
           </div>
         </section>
 
-        {/* Related Pages Section */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Letras para Instagram</h3>
-              <p>Generador completo de fuentes tipográficas y estilos de texto para redes sociales.</p>
-              <Link href="/letras-para-instagram/" className="card-link">
-                Ver fuente principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Nombres</h3>
-              <p>Crea variantes decorativas y elegantes específicas para nombres de perfil.</p>
-              <Link href="/letras-para-instagram/letras-para-nombres/" className="card-link">
-                Ver letras para nombres →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Copiar y Pegar</h3>
-              <p>Explora un catálogo extenso con cientos de estilos de letras alfanuméricas listas para usar.</p>
-              <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className="card-link">
-                Explorar catálogo →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Genera fuentes caligráficas manuscritas y delicadas para tus proyectos.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver estilos cursivos →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

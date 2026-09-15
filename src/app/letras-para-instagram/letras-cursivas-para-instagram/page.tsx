@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import CursiveInstagramExplorer from './CursiveInstagramExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Letras Cursivas para Instagram | Texto Cursivo para Copiar',
@@ -258,59 +259,12 @@ export default function LetrasCursivasParaInstagramPage() {
           </div>
         </section>
 
-        {/* Related Pages Section */}
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-3">
-            <div className="card">
-              <h3>Letras para Instagram</h3>
-              <p>Generador principal de fuentes tipográficas para la plataforma de Instagram.</p>
-              <Link href="/letras-para-instagram/" className="card-link">
-                Ver fuente principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Silo general de letras manuscritas, caligrafía script y estilos elegantes.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver fuente cursiva →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Abecedario Cursivo</h3>
-              <p>Explora el alfabeto de la A a la Z en mayúsculas y minúsculas cursivas.</p>
-              <Link href="/letras-cursivas/abecedario-cursivo/" className="card-link">
-                Ver abecedario →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas Elegantes</h3>
-              <p>Selección refinada de fuentes caligráficas avanzadas para proyectos formales.</p>
-              <Link href="/letras-cursivas/letras-cursivas-elegantes/" className="card-link">
-                Ver cursivas elegantes →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas para Copiar y Pegar</h3>
-              <p>Colección rápida de textos cursivos listos para copiar con un solo clic.</p>
-              <Link href="/letras-cursivas/letras-cursivas-para-copiar-y-pegar/" className="card-link">
-                Ver cursivas rápidas →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Bio</h3>
-              <p>Plantillas, frases y estilos de letras adaptados a la biografía de Instagram.</p>
-              <Link href="/letras-para-instagram/letras-para-bio/" className="card-link">
-                Ver letras para bio →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import ElegantCursiveExplorer from './ElegantCursiveExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: "Letras Cursivas Elegantes para Copiar y Pegar | Letras Bonitas",
@@ -160,23 +161,7 @@ export default function LetrasCursivasElegantesPage() {
       {/* Internal Silo Links */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.relatedBox}>
-            <h3>Sigue explorando el silo</h3>
-            <div className={styles.relatedLinksList}>
-              <Link href="/letras-cursivas/" className={styles.relatedLink}>
-                Ir al Generador Principal de Letras Cursivas →
-              </Link>
-              <Link href="/letras-cursivas/letras-cursivas-para-copiar-y-pegar/" className={styles.relatedLink}>
-                Ver Letras Cursivas para Copiar y Pegar →
-              </Link>
-              <Link href="/letras-cursivas/abecedario-cursivo/" className={styles.relatedLink}>
-                Explorar el Abecedario Cursivo A-Z →
-              </Link>
-              <Link href="/" className={styles.relatedLink}>
-                Volver a la Página Principal de Letras Bonitas →
-              </Link>
-            </div>
-          </div>
+          <RelatedLinks />
         </div>
       </section>
     </main>

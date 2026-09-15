@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InsaneNamesExplorer from './InsaneNamesExplorer';
 import styles from './page.module.css';
+import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Nombres Insanos para Free Fire | Nombres Salvajes y Pro',
@@ -290,43 +291,12 @@ export default function NombresInsanosPage() {
           </div>
         </section>
 
-        {/* Related Content Cards */}
-        <section className={`${styles.section} ${styles.bgLight}`}>
-          <h2 className={styles.sectionTitle}>También te puede interesar</h2>
-          <div className="grid grid-4">
-            <div className="card">
-              <h3>Generador de Nombres para Free Fire</h3>
-              <p>Accede a la herramienta principal para personalizar totalmente tu apodo gamer con alfabetos y adornos.</p>
-              <Link href="/nombres-para-free-fire/" className="card-link">
-                Ir al generador principal →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Nombres</h3>
-              <p>Crea tipografías bonitas y variantes elegantes específicas para nombres de perfil.</p>
-              <Link href="/letras-para-instagram/letras-para-nombres/" className="card-link">
-                Ver letras para nombres →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras para Copiar y Pegar</h3>
-              <p>Catálogo extenso con cientos de estilos de letras alfanuméricas listas para usar.</p>
-              <Link href="/conversor-de-letras/letras-para-copiar-y-pegar/" className="card-link">
-                Explorar catálogo →
-              </Link>
-            </div>
-
-            <div className="card">
-              <h3>Letras Cursivas</h3>
-              <p>Genera fuentes caligráficas y manuscritas para tus proyectos decorativos.</p>
-              <Link href="/letras-cursivas/" className="card-link">
-                Ver estilos cursivos →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Herramientas Relacionadas */}
+      <section className={styles.section}>
+        <div className="container">
+          <RelatedLinks />
+        </div>
+      </section>
       </div>
     </main>
   );
