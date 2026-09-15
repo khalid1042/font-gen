@@ -275,7 +275,20 @@ export default function NombresParaJuegosPage() {
           </div>
         </section>
 
-        {/* Herramientas Relacionadas */}
+        {/* Directorio de la Categoría (SEO Hub) */}
+      <section className={styles.section}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Directorio de Nombres para Juegos</h2>
+          <div className={styles.directoryGrid} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+            <Link href="/nombres-para-juegos/nicks/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Nicks para Juegos</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Encuentra el nickname perfecto para cualquier videojuego.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
           <RelatedLinks />

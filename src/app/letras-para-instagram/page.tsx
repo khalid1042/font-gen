@@ -189,6 +189,31 @@ export default function LetrasParaInstagramPage() {
         </div>
       </section>
 
+      {/* Directorio de la Categoría (SEO Hub) */}
+      <section className={styles.section}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Directorio de Letras para Instagram</h2>
+          <div className={styles.directoryGrid} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+            <Link href="/letras-para-instagram/letras-cursivas-para-instagram/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Letras Cursivas para Instagram</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Estilos de letras cursivas perfectos para tu Instagram.</p>
+            </Link>
+            <Link href="/letras-para-instagram/letras-para-bio/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Letras para Bio</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Haz que tu biografía destaque con estas tipografías.</p>
+            </Link>
+            <Link href="/letras-para-instagram/letras-para-nombres/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Letras para Nombres</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Personaliza tu nombre de perfil con letras llamativas.</p>
+            </Link>
+            <Link href="/letras-para-instagram/simbolos-para-instagram/" style={{ display: 'block', padding: '1.5rem', backgroundColor: 'var(--bg-card, #ffffff)', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none', color: 'inherit' }} className="dirCard">
+              <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary, #4a25e1)', fontSize: '1.25rem' }}>Símbolos para Instagram</h3>
+              <p style={{ margin: 0, color: 'var(--text-secondary, #555)', lineHeight: '1.5' }}>Símbolos decorativos (estrellas, corazones, etc.) para tus posts.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Herramientas Relacionadas */}
       <section className={styles.section}>
         <div className="container">
