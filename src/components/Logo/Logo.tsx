@@ -8,58 +8,52 @@ interface LogoProps {
 export default function Logo({ onClick }: LogoProps) {
   return (
     <Link href="/" className={styles.logo} onClick={onClick}>
-      <svg
-        className={styles.logoIcon}
-        width="36"
-        height="36"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <defs>
-          <linearGradient id="magic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#8b5cf6" />
-            <stop offset="50%" stopColor="#ec4899" />
-            <stop offset="100%" stopColor="#f43f5e" />
-          </linearGradient>
-          <linearGradient id="magic-gradient-2" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#3b82f6" />
-            <stop offset="100%" stopColor="#8b5cf6" />
-          </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-            <feMerge>
-              <feMergeNode in="coloredBlur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-        </defs>
-        
-        {/* Animated magical trail */}
-        <path 
-          d="M6 24C10 18 16 6 24 8C30 10 28 22 18 28" 
-          stroke="url(#magic-gradient-2)" 
-          strokeWidth="2" 
-          strokeLinecap="round" 
-          fill="none" 
-          className={styles.magicTrail}
-        />
-        
-        {/* Magical Wand / Pen */}
-        <g className={styles.magicWand} filter="url(#glow)">
-          <path d="M4 28C5.5 28 7.5 26.5 9 25L23 11L27 7C28 6 28 4 27 3C26 2 24 2 23 3L19 7L5 21C3.5 22.5 2 24.5 2 26C2 27.5 2.5 28 4 28Z" fill="url(#magic-gradient)"/>
-          <path d="M21 9L25 5" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
-          <path d="M11 19L19 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="1 3" opacity="0.4"/>
-        </g>
-        
-        {/* Animated Sparkles */}
-        <g className={styles.sparkles}>
-          <path d="M4 2L5 6L9 7L5 8L4 12L3 8L-1 7L3 6Z" fill="#FCD34D" className={styles.sparkle1}/>
-          <path d="M28 16L28.5 19L31.5 19.5L28.5 20L28 23L27.5 20L24.5 19.5L27.5 19Z" fill="#FBCFE8" className={styles.sparkle2}/>
-          <circle cx="27" cy="26" r="1.5" fill="#60A5FA" className={styles.sparkle3}/>
-        </g>
-      </svg>
+      <div className={styles.logoIconWrapper}>
+        <svg
+          className={styles.logoIcon}
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="quill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#ec4899" />
+              <stop offset="50%" stopColor="#a855f7" />
+              <stop offset="100%" stopColor="#6366f1" />
+            </linearGradient>
+            <linearGradient id="quill-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#ec4899" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#6366f1" stopOpacity="0.15" />
+            </linearGradient>
+          </defs>
+
+          {/* Rounded background box for the icon */}
+          <rect width="36" height="36" rx="10" fill="url(#quill-bg)" />
+          <rect x="0.5" y="0.5" width="35" height="35" rx="9.5" stroke="url(#quill-grad)" strokeOpacity="0.2" />
+
+          {/* Abstract stylized 'A' & 'a' (Typography / Fonts) */}
+          <path
+            d="M14 26L19 10H22L27 26M16 21H25"
+            stroke="url(#quill-grad)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={styles.typeA}
+          />
+          <path
+            d="M13 18C13 16 11 15 9 15C7 15 5 16 5 18C5 20 7 21 9 21C11 21 13 20 13 18ZM13 18V21"
+            stroke="url(#quill-grad)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={styles.typeSmallA}
+          />
+
+        </svg>
+      </div>
       <span className={styles.logoText}>
         <span className="text-gradient">Letras</span> Bonitas
       </span>
