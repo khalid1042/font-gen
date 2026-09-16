@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: [{ url: '/images/letras_cursivas.png', width: 1200, height: 630, alt: 'Letras Cursivas' }],
     title: "Letras Cursivas para Copiar y Pegar",
     description: "Generador de letras cursivas elegantes para copiar y pegar.",
-    url: "https://letrasbonitas.example.com/letras-cursivas/",
+    url: "/letras-cursivas/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Abecedario Cursivo A-Z para Copiar y Pegar",
     description: "Descubre el abecedario cursivo completo de la A a la Z. Copia letras cursivas individuales en mayúsculas y minúsculas.",
-    url: "https://letrasbonitas.example.com/letras-cursivas/abecedario-cursivo/",
+    url: "/letras-cursivas/abecedario-cursivo/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

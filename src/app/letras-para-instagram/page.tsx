@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: [{ url: '/images/letras_instagram.png', width: 1200, height: 630, alt: 'Letras para Instagram' }],
     title: "Letras para Instagram | Fuentes y Textos para Copiar",
     description: "Generador de fuentes y letras bonitas para la bio, nombre y captions de Instagram.",
-    url: "https://letrasbonitas.example.com/letras-para-instagram/",
+    url: "/letras-para-instagram/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

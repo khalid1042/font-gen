@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Letras Cursivas para Copiar y Pegar",
     description: "Genera y copia letras cursivas bonitas al instante para redes sociales.",
-    url: "https://letrasbonitas.example.com/letras-cursivas/letras-cursivas-para-copiar-y-pegar/",
+    url: "/letras-cursivas/letras-cursivas-para-copiar-y-pegar/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

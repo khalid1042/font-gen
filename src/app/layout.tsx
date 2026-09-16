@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')),
   title: "Letras Bonitas - Generador de Texto para Copiar y Pegar",
   description: "Genera letras bonitas, estilos de texto y letras especiales para copiar y pegar fácilmente en Instagram, WhatsApp, Facebook y más.",
   alternates: {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Letras Bonitas - Generador de Texto",
     description: "Genera letras bonitas y estilos de texto para copiar y pegar.",
-    url: "https://letrasbonitas.example.com", // Placeholder domain
+    url: "/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "website",

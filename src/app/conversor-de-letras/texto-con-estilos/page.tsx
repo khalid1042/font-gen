@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Texto con Estilos | Crea Textos Estilizados para Copiar",
     description: "Convierte texto normal en múltiples estilos tipográficos Unicode para redes sociales.",
-    url: "https://letrasbonitas.example.com/conversor-de-letras/texto-con-estilos/",
+    url: "/conversor-de-letras/texto-con-estilos/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: [{ url: '/images/conversor_letras.png', width: 1200, height: 630, alt: 'Conversor de Letras' }],
     title: "Conversor de Letras Online",
     description: "Convierte texto normal en múltiples estilos tipográficos para copiar y pegar.",
-    url: "https://letrasbonitas.example.com/conversor-de-letras/",
+    url: "/conversor-de-letras/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",

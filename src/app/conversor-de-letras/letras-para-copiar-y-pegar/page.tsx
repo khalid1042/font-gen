@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Letras para Copiar y Pegar | Textos Bonitos y Estilos para Copiar",
     description: "Genera y copia al instante letras bonitas, decorativas y especiales para redes sociales.",
-    url: "https://letrasbonitas.example.com/conversor-de-letras/letras-para-copiar-y-pegar/",
+    url: "/conversor-de-letras/letras-para-copiar-y-pegar/",
     siteName: "Letras Bonitas",
     locale: "es_ES",
     type: "article",
