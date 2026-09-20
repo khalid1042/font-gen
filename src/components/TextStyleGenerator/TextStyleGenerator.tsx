@@ -60,7 +60,7 @@ export default function TextStyleGenerator() {
               onClick={() => setSelectedStyleId(style.id)}
               aria-label={`Apply ${style.name} text style`}
             >
-              {style.name} {selectedStyleId === style.id && '✓'}
+              {style.name}{selectedStyleId === style.id ? ' ✓' : ''}
             </button>
           ))}
         </div>
