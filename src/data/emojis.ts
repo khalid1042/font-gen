@@ -162,5 +162,72 @@ export const emojis: EmojiData[] = [
   { emoji: "🇲🇽", name: "Bandera: México", keywords: ["méxico", "mexico", "mx"], category: "🏳️ Banderas" },
   { emoji: "🇦🇷", name: "Bandera: Argentina", keywords: ["argentina", "ar"], category: "🏳️ Banderas" },
   { emoji: "🇨🇴", name: "Bandera: Colombia", keywords: ["colombia", "co"], category: "🏳️ Banderas" },
-  { emoji: "🇺🇸", name: "Bandera: Estados Unidos", keywords: ["usa", "estados unidos", "us"], category: "🏳️ Banderas" }
+  { emoji: "🇺🇸", name: "Bandera: Estados Unidos", keywords: ["usa", "estados unidos", "us"], category: "🏳️ Banderas" },
+
+  // --- NEW EMOJIS ADDED ---
+  
+  // Más Caras y emociones
+  { emoji: "😇", name: "Cara sonriendo con aureola", keywords: ["ángel", "bueno", "inocente", "angel"], category: "😀 Caras y emociones" },
+  { emoji: "🙃", name: "Cara al revés", keywords: ["ironía", "sarcasmo", "upside down"], category: "😀 Caras y emociones" },
+  { emoji: "😉", name: "Cara guiñando un ojo", keywords: ["guiño", "broma", "wink"], category: "😀 Caras y emociones" },
+  { emoji: "😋", name: "Cara saboreando comida", keywords: ["rico", "comida", "yummy"], category: "😀 Caras y emociones" },
+  { emoji: "😜", name: "Cara sacando la lengua y guiñando", keywords: ["locura", "broma", "lengua", "wink"], category: "😀 Caras y emociones" },
+  { emoji: "🤫", name: "Cara pidiendo silencio", keywords: ["shh", "secreto", "silencio", "quiet"], category: "😀 Caras y emociones" },
+  { emoji: "🤭", name: "Cara con mano sobre la boca", keywords: ["ups", "risita", "oops"], category: "😀 Caras y emociones" },
+  { emoji: "🥱", name: "Cara bostezando", keywords: ["aburrido", "sueño", "yawn"], category: "😀 Caras y emociones" },
+  { emoji: "🥶", name: "Cara helada", keywords: ["frío", "congelado", "cold", "freezing"], category: "😀 Caras y emociones" },
+  { emoji: "🥵", name: "Cara acalorada", keywords: ["calor", "sudor", "hot", "sweating"], category: "😀 Caras y emociones" },
+  { emoji: "🤯", name: "Cabeza explotando", keywords: ["boom", "sorpresa", "mind blown"], category: "😀 Caras y emociones" },
+  { emoji: "🥳", name: "Cara de fiesta", keywords: ["celebración", "cumpleaños", "party"], category: "😀 Caras y emociones" },
+  { emoji: "🤠", name: "Cara con sombrero de vaquero", keywords: ["vaquero", "cowboy", "yeehaw"], category: "😀 Caras y emociones" },
+  { emoji: "🤢", name: "Cara de asco", keywords: ["enfermo", "asco", "sick", "gross"], category: "😀 Caras y emociones" },
+  { emoji: "🤮", name: "Cara vomitando", keywords: ["asco", "vomitar", "puke"], category: "😀 Caras y emociones" },
+  { emoji: "🤧", name: "Cara estornudando", keywords: ["resfriado", "alergia", "sneeze"], category: "😀 Caras y emociones" },
+  { emoji: "😵", name: "Cara mareada", keywords: ["mareo", "confusión", "dizzy"], category: "😀 Caras y emociones" },
+
+  // Más Gestos
+  { emoji: "👊", name: "Puño cerrado", keywords: ["puñetazo", "choque", "punch", "fist"], category: "👍 Gestos" },
+  { emoji: "🤝", name: "Apretón de manos", keywords: ["trato", "acuerdo", "handshake"], category: "👍 Gestos" },
+  { emoji: "💪", name: "Bíceps flexionado", keywords: ["fuerza", "músculo", "strong", "muscle"], category: "👍 Gestos" },
+  { emoji: "🤌", name: "Dedos juntos", keywords: ["italiano", "qué", "italian", "chef kiss"], category: "👍 Gestos" },
+  { emoji: "🤏", name: "Mano pellizcando", keywords: ["pequeño", "un poco", "tiny", "pinch"], category: "👍 Gestos" },
+  { emoji: "🤟", name: "Te quiero", keywords: ["amor", "rock", "signo", "love you"], category: "👍 Gestos" },
+
+  // Más Amor
+  { emoji: "❤️‍🔥", name: "Corazón en llamas", keywords: ["pasión", "fuego", "heart on fire"], category: "❤️ Amor" },
+  { emoji: "❤️‍🩹", name: "Corazón vendado", keywords: ["curando", "recuperación", "healing"], category: "❤️ Amor" },
+  { emoji: "💌", name: "Carta de amor", keywords: ["mensaje", "romance", "love letter"], category: "❤️ Amor" },
+  { emoji: "💜", name: "Corazón morado", keywords: ["púrpura", "bts", "purple heart"], category: "❤️ Amor" },
+  { emoji: "💙", name: "Corazón azul", keywords: ["frío", "confianza", "blue heart"], category: "❤️ Amor" },
+  { emoji: "💚", name: "Corazón verde", keywords: ["naturaleza", "esperanza", "green heart"], category: "❤️ Amor" },
+  { emoji: "💛", name: "Corazón amarillo", keywords: ["amistad", "yellow heart"], category: "❤️ Amor" },
+
+  // Más Aesthetic
+  { emoji: "🔮", name: "Bola de cristal", keywords: ["magia", "futuro", "crystal ball"], category: "✨ Aesthetic" },
+  { emoji: "🧿", name: "Ojo turco", keywords: ["protección", "amuleto", "nazar"], category: "✨ Aesthetic" },
+  { emoji: "🪬", name: "Mano de Fátima", keywords: ["hamsa", "protección", "espiritual"], category: "✨ Aesthetic" },
+  { emoji: "🧚‍♀️", name: "Hada", keywords: ["magia", "fantasía", "fairy"], category: "✨ Aesthetic" },
+  { emoji: "🧜‍♀️", name: "Sirena", keywords: ["mar", "fantasía", "mermaid"], category: "✨ Aesthetic" },
+  { emoji: "🍄", name: "Champiñón", keywords: ["hongo", "bosque", "mushroom", "cottagecore"], category: "✨ Aesthetic" },
+  { emoji: "🍃", name: "Hojas al viento", keywords: ["viento", "naturaleza", "leaves"], category: "✨ Aesthetic" },
+  { emoji: "🍂", name: "Hoja caída", keywords: ["otoño", "naturaleza", "autumn", "fall"], category: "✨ Aesthetic" },
+  { emoji: "🌷", name: "Tulipán", keywords: ["flor", "primavera", "tulip"], category: "✨ Aesthetic" },
+  { emoji: "🌻", name: "Girasol", keywords: ["flor", "sol", "sunflower"], category: "✨ Aesthetic" },
+
+  // Más Animales
+  { emoji: "🦖", name: "T-Rex", keywords: ["dinosaurio", "rex", "dinosaur"], category: "🐶 Animales" },
+  { emoji: "🐢", name: "Tortuga", keywords: ["lento", "caparazón", "turtle"], category: "🐶 Animales" },
+  { emoji: "🐍", name: "Serpiente", keywords: ["víbora", "snake"], category: "🐶 Animales" },
+  { emoji: "🐙", name: "Pulpo", keywords: ["mar", "tentáculos", "octopus"], category: "🐶 Animales" },
+  { emoji: "🦈", name: "Tiburón", keywords: ["mar", "peligro", "shark"], category: "🐶 Animales" },
+  { emoji: "🦥", name: "Perezoso", keywords: ["lento", "dormir", "sloth"], category: "🐶 Animales" },
+  { emoji: "🦦", name: "Nutria", keywords: ["agua", "lindo", "otter"], category: "🐶 Animales" },
+
+  // Más Comida
+  { emoji: "🍣", name: "Sushi", keywords: ["pescado", "japón", "sushi"], category: "🍔 Comida" },
+  { emoji: "🍜", name: "Fideos", keywords: ["ramen", "sopa", "noodles"], category: "🍔 Comida" },
+  { emoji: "🥐", name: "Croissant", keywords: ["desayuno", "pan", "croissant"], category: "🍔 Comida" },
+  { emoji: "🥞", name: "Tortitas", keywords: ["desayuno", "dulce", "pancakes"], category: "🍔 Comida" },
+  { emoji: "🥓", name: "Bacon", keywords: ["tocino", "carne", "bacon"], category: "🍔 Comida" },
+  { emoji: "🧀", name: "Queso", keywords: ["lácteo", "cheese"], category: "🍔 Comida" }
 ];
