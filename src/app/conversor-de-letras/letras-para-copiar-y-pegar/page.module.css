@@ -363,6 +363,7 @@
 }
 
 .resultText {
+  letter-spacing: 2px;
   font-size: 1.625rem;
   color: var(--foreground);
   margin: 0;
@@ -576,6 +577,7 @@
 }
 
 .alphabetText {
+  letter-spacing: 2px;
   font-size: 1.125rem;
   color: var(--primary);
   line-height: 1.8;

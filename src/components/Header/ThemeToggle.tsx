@@ -14,11 +14,7 @@ export default function ThemeToggle() {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return <div className={styles.placeholder}></div>; // Placeholder to prevent layout shift
-  }
-
-  const isDark = theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  const isDark = theme === "dark" || (theme === "system" && typeof window !== 'undefined' && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
   const toggleTheme = () => {
     setTheme(isDark ? "light" : "dark");
@@ -29,14 +25,16 @@ export default function ThemeToggle() {
       onClick={toggleTheme} 
       className={styles.toggleButton} 
       aria-label="Toggle Dark Mode"
-      title={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+      title={mounted ? (isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro") : "Cargando tema..."}
     >
       <div className={styles.iconContainer}>
-        {isDark ? (
-          <Sun className={styles.icon} size={20} />
-        ) : (
-          <Moon className={styles.icon} size={20} />
-        )}
+        {mounted ? (
+          isDark ? (
+            <Sun className={styles.icon} size={20} />
+          ) : (
+            <Moon className={styles.icon} size={20} />
+          )
+        ) : null}
       </div>
     </button>
   );

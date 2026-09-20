@@ -128,8 +128,8 @@ export default function InstagramFontsExplorer() {
 
   // Alphabets
   const scriptStyleObj = stylesMap.find(s => s.id === 'script') || stylesMap[3];
-  const fullUpperScript = scriptStyleObj.transform('ABCDEFGHIJKLMNOPQRSTUVWXYZ').split('').join(' ');
-  const fullLowerScript = scriptStyleObj.transform('abcdefghijklmnopqrstuvwxyz').split('').join(' ');
+  const fullUpperScript = Array.from(scriptStyleObj.transform('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).join(' ');
+  const fullLowerScript = Array.from(scriptStyleObj.transform('abcdefghijklmnopqrstuvwxyz')).join(' ');
   const fullUpperStd = 'A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z';
   const fullLowerStd = 'a b c d e f g h i j k l m n ñ o p q r s t u v w x y z';
 

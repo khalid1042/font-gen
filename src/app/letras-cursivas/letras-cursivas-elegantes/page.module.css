@@ -214,6 +214,7 @@
 }
 
 .resultText {
+  letter-spacing: 2px;
   font-size: 1.75rem;
   color: var(--foreground);
   line-height: 1.4;

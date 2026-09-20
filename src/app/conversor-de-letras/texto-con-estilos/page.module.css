@@ -371,11 +371,13 @@
 }
 
 .resultText {
+  letter-spacing: 2px;
   font-size: 1.625rem;
   color: var(--foreground);
   margin: 0;
   line-height: 1.4;
   word-break: break-word;
+  letter-spacing: 2px;
 }
 
 .copyBtn {
@@ -478,10 +480,12 @@
 }
 
 .compTransformedText {
+  letter-spacing: 2px;
   font-size: 1.625rem;
   color: var(--primary);
   margin: 0;
   word-break: break-word;
+  letter-spacing: 2px;
 }
 
 .smallCopyBtn {
@@ -571,10 +575,12 @@
 }
 
 .readyText {
+  letter-spacing: 2px;
   font-size: 1.35rem;
   color: var(--primary);
   margin: 0;
   word-break: break-word;
+  letter-spacing: 1.5px;
 }
 
 /* Letter Explorer Section */
@@ -702,6 +708,7 @@
 }
 
 .alphabetText {
+  letter-spacing: 2px;
   font-size: 1.125rem;
   color: var(--primary);
   line-height: 1.8;
@@ -711,6 +718,7 @@
   border-radius: var(--radius-md);
   border: 1px dashed var(--border);
   margin: 0;
+  letter-spacing: 2px;
 }
 
 /* Articles and Content Typography */

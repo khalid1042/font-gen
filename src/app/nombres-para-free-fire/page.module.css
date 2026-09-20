@@ -470,6 +470,7 @@
 }
 
 .resultText {
+  letter-spacing: 2px;
   font-size: 1.5rem;
   color: var(--foreground);
   margin: 0;

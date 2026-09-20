@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
 import NicksExplorer from './NicksExplorer';
 import styles from './page.module.css';
 import RelatedLinks from '../../../components/RelatedLinks/RelatedLinks';
@@ -53,8 +54,7 @@ export default function NicksPage() {
 
   return (
     <main className={styles.main}>
-      <script
-        type="application/ld+json"
+      <Script id="json-ld"         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
