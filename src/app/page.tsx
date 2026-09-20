@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Generator from '../components/Generator/Generator';
+import TextStyleGenerator from '../components/TextStyleGenerator/TextStyleGenerator';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       {/* Main Generator Tool */}
       <section className={styles.generatorSection}>
         <div className="container">
-          <Generator />
+          <TextStyleGenerator />
         </div>
       </section>
 

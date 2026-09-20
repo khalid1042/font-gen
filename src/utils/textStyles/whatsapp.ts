@@ -1,0 +1,1 @@
+export const transformWhatsApp = (text: string) => `*${text}*`;

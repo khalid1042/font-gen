@@ -1,0 +1,1 @@
+export const transformTikTok = (text: string) => text.split('').join('​');
