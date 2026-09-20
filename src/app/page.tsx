@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import TextStyleGenerator from '../components/TextStyleGenerator/TextStyleGenerator';
 import styles from './page.module.css';
 
@@ -69,7 +69,7 @@ export default function Home() {
             <div className={styles.step}>
               <div className={styles.stepIcon}>3</div>
               <h3>Copia</h3>
-              <p>Haz clic en "Copiar" y pégalo en Instagram, WhatsApp o donde prefieras.</p>
+              <p>Haz clic en &quot;Copiar&quot; y pégalo en Instagram, WhatsApp o donde prefieras.</p>
             </div>
           </div>
         </div>
