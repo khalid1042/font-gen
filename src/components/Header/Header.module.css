@@ -30,17 +30,13 @@
   gap: 1rem;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    gap: 1.5rem;
-  }
-}
-
 @media (min-width: 1400px) {
   .container {
     gap: 4rem;
   }
 }
+
+
 
 .logo {
   font-size: 1.5rem;
@@ -58,7 +54,7 @@
   display: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .desktopNav {
     display: flex;
     align-items: center;
@@ -108,7 +104,7 @@
   background-color: var(--primary-light);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .mobileMenuBtn {
     display: none;
   }
@@ -124,7 +120,7 @@
   box-shadow: var(--shadow-md);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .mobileNavDrawer {
     display: none;
   }
