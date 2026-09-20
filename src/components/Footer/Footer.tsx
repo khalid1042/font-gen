@@ -40,6 +40,18 @@ export default function Footer() {
           </div>
 
           <div className={styles.linksColumn}>
+            <h3 className={styles.linkTitle}>Emojis</h3>
+            <ul className={styles.linkList}>
+              <li><Link href="/emojis/">Emoji Generator</Link></li>
+              <li><Link href="/emojis/tiktok/">Emojis para TikTok</Link></li>
+              <li><Link href="/emojis/whatsapp/">Emojis para WhatsApp</Link></li>
+              <li><Link href="/emojis/instagram/">Emojis para Instagram</Link></li>
+              <li><Link href="/emojis/twitter/">Emojis para Twitter/X</Link></li>
+              <li><Link href="/emojis/youtube/">Emojis para YouTube</Link></li>
+            </ul>
+          </div>
+
+          <div className={styles.linksColumn}>
             <h3 className={styles.linkTitle}>Enlaces Útiles</h3>
             <ul className={styles.linkList}>
               <li><Link href="/">Inicio / Generador Principal</Link></li>

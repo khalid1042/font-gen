@@ -1,0 +1,144 @@
+.main {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.hero {
+  background: var(--bg-secondary);
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.bgLight {
+  background-color: var(--bg-secondary);
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-primary);
+}
+
+.article h3 {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
+  color: var(--text-primary);
+}
+
+.article p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.article ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.article li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.article code {
+  background-color: var(--bg-primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: var(--primary-color);
+}
+
+.breadcrumb {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+}
+
+.breadcrumbNav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumbLink {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbLink:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumbSeparator {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.platformLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.platformCard {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.platformCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.platformIcon {
+  font-size: 2rem;
+}
+
+.platformName {
+  font-weight: 600;
+}

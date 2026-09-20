@@ -23,6 +23,9 @@ export default function Header() {
               <Link href="/" className={styles.navLink}>Generador</Link>
             </li>
             <li>
+              <Link href="/emojis/" className={styles.navLink}>Emojis</Link>
+            </li>
+            <li>
               <Link href="/letras-para-instagram/" className={styles.navLink}>Letras para Instagram</Link>
             </li>
             <li>
@@ -74,6 +77,11 @@ export default function Header() {
             <li>
               <Link href="/" className={styles.mobileNavLink} onClick={closeMenu}>
                 Generador
+              </Link>
+            </li>
+            <li>
+              <Link href="/emojis/" className={styles.mobileNavLink} onClick={closeMenu}>
+                Emojis
               </Link>
             </li>
             <li>
