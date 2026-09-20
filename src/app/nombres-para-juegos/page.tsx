@@ -126,7 +126,7 @@ export default function NombresParaJuegosPage() {
             <div className="card">
               <h3>Apodos para Juegos</h3>
               <p>Encuentra apodos y aliases para crear una identidad gamer fácil de recordar por tus compañeros.</p>
-              <Link href="/nombres-para-juegos/apodos/" className="card-link">
+              <Link href="/nombres-para-free-fire/apodos/" className="card-link">
                 Explorar apodos →
               </Link>
             </div>
@@ -134,7 +134,7 @@ export default function NombresParaJuegosPage() {
             <div className="card">
               <h3>Nombres para Clanes</h3>
               <p>Genera nombres e identidades coordinadas de equipo, escuadra, clan y tags de competición.</p>
-              <Link href="/nombres-para-juegos/nombres-para-clanes/" className="card-link">
+              <Link href="/nombres-para-free-fire/clanes/" className="card-link">
                 Ver nombres para clanes →
               </Link>
             </div>
@@ -142,7 +142,7 @@ export default function NombresParaJuegosPage() {
             <div className="card">
               <h3>Nombres Chidos para Juegos</h3>
               <p>Descubre combinaciones visuales atractivas, modernas y con estilo para destacar en partida.</p>
-              <Link href="/nombres-para-juegos/nombres-chidos/" className="card-link">
+              <Link href="/nombres-para-free-fire/nombres-insanos/" className="card-link">
                 Ver nombres chidos →
               </Link>
             </div>

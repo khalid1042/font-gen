@@ -35,7 +35,7 @@ export default function Footer() {
               <li><Link href="/nombres-para-juegos/nicks/">Generador de Nicks</Link></li>
               <li><Link href="/nombres-para-free-fire/nombres-insanos/">Nombres Insanos</Link></li>
               <li><Link href="/nombres-para-free-fire/clanes/">Nombres para Clanes</Link></li>
-              <li><Link href="/nombres-para-juegos/apodos/">Apodos Pro</Link></li>
+              <li><Link href="/nombres-para-free-fire/apodos/">Apodos Pro</Link></li>
             </ul>
           </div>
 
