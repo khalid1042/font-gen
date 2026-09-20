@@ -1,1 +1,1 @@
-export const transformCholas = (text: string) => `••.¸¸.•*´¸.•*´ ${text} `*•.¸´*•.¸¸.••`;
+export const transformCholas = (text: string) => `••.¸¸.•*´¸.•*´ ${text} *•.¸´*•.¸¸.••`;
