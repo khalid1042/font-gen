@@ -1,5 +1,6 @@
 
 import TextStyleGenerator from '../components/TextStyleGenerator/TextStyleGenerator';
+import { HowToUse } from '../components/HowToUse/HowToUse';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -52,28 +53,8 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="como-funciona" className={`${styles.section} ${styles.bgLight}`}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>¿Cómo funciona?</h2>
-          <div className={styles.stepsGrid}>
-            <div className={styles.step}>
-              <div className={styles.stepIcon}>1</div>
-              <h3>Escribe</h3>
-              <p>Introduce el texto que quieres transformar en el recuadro superior.</p>
-            </div>
-            <div className={styles.step}>
-              <div className={styles.stepIcon}>2</div>
-              <h3>Elige</h3>
-              <p>Selecciona tu estilo favorito entre las decenas de opciones generadas automáticamente.</p>
-            </div>
-            <div className={styles.step}>
-              <div className={styles.stepIcon}>3</div>
-              <h3>Copia</h3>
-              <p>Haz clic en &quot;Copiar&quot; y pégalo en Instagram, WhatsApp o donde prefieras.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HowToUse />
+
 
       {/* Use Cases */}
       <section className={styles.section}>

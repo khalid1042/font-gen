@@ -5,6 +5,7 @@ import GamingNameGenerator from './GamingNameGenerator';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 import Image from 'next/image';
+import { HowToUse } from '../../components/HowToUse/HowToUse';
 
 export const metadata: Metadata = {
   title: 'Nombres para Juegos | Generador de Nombres Gamer',
@@ -78,8 +79,8 @@ export default function NombresParaJuegosPage() {
             <p className={styles.subtitle}>
               Crea nombres para juegos originales, chidos, pro y con estilo. Genera tu nickname gamer, personalízalo con letras y símbolos y cópialo fácilmente.
             </p>
-            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
-              <Image src="/images/nombres_juegos.png" alt="Nombres para Juegos" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            <div className={styles.heroImageWrapper} style={{ margin: '2rem auto 0', borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color, #eaeaea)', maxHeight: '300px', maxWidth: '800px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <Image src="/images/nombres_juegos.png" alt="Nombres para Juegos" width={1200} height={630} style={{ width: '100%', height: '300px', objectFit: 'cover', display: 'block' }} priority />
             </div>
             <div className={styles.heroStats}>
               <div className={styles.heroStatItem}>
@@ -110,6 +111,16 @@ export default function NombresParaJuegosPage() {
         <section className={styles.section}>
           <GamingNameGenerator />
         </section>
+
+        <HowToUse 
+          title="¿Cómo funciona el generador de nombres?"
+          step1Title="1. Ingresa tu nombre"
+          step1Desc="Escribe tu apodo, nombre real o palabra favorita en la caja de texto."
+          step2Title="2. Elige tu decoración"
+          step2Desc="Explora la lista y añade símbolos heroicos, alas o estilos insanos a tu nick."
+          step3Title="3. ¡Copia tu nick!"
+          step3Desc="Haz clic en el botón de copiar y pégalo en Free Fire, Roblox o tu juego favorito."
+        />
 
         {/* Supporting Categories Section (Pillar Preview) */}
         <section className={`${styles.section} ${styles.bgLight}`}>

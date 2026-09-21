@@ -4,6 +4,7 @@ import ConversorTool from './ConversorTool';
 import styles from './page.module.css';
 import RelatedLinks from '../../components/RelatedLinks/RelatedLinks';
 import Image from 'next/image';
+import { HowToUse } from '../../components/HowToUse/HowToUse';
 
 export const metadata: Metadata = {
   title: "Conversor de Letras Online | Convierte Texto para Copiar y Pegar",
@@ -43,8 +44,8 @@ export default function ConversorDeLetrasPage() {
             <p className={styles.subtitle}>
               Convierte tu texto en letras bonitas y estilos diferentes. Convierte texto normal en fuentes cursivas, negritas, góticas, decorativas y mucho más para copiar y pegar al instante.
             </p>
-            <div className={styles.heroImageWrapper} style={{ marginTop: '2rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #eaeaea' }}>
-              <Image src="/images/conversor_letras.png" alt="Conversor de Letras" width={1200} height={630} style={{ width: '100%', height: 'auto', display: 'block' }} priority />
+            <div className={styles.heroImageWrapper} style={{ margin: '2rem auto 0', borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color, #eaeaea)', maxHeight: '300px', maxWidth: '800px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <Image src="/images/conversor_letras.png" alt="Conversor de Letras" width={1200} height={630} style={{ width: '100%', height: '300px', objectFit: 'cover', display: 'block' }} priority />
             </div>
           </div>
         </div>
@@ -92,20 +93,16 @@ export default function ConversorDeLetrasPage() {
       </section>
 
       {/* How it works */}
-      <section className={`${styles.section} ${styles.bgLight}`}>
-        <div className="container">
-          <article className={styles.article}>
-            <h2>¿Cómo funciona el conversor de letras?</h2>
-            <ol className={styles.orderedList}>
-              <li><strong>Escribe o pega tu texto:</strong> Introduce las palabras o frases que deseas transformar en la caja del conversor.</li>
-              <li><strong>Procesamiento en tiempo real:</strong> La herramienta analiza cada letra y genera automáticamente decenas de estilos (negrita, cursiva, gótica, etc.).</li>
-              <li><strong>Selecciona tu categoría:</strong> Filtra por el tipo de estilo que prefieras para encontrar rápidamente la combinación perfecta.</li>
-              <li><strong>Copia el resultado:</strong> Pulsa el botón "Copiar" al lado de la variación elegida.</li>
-              <li><strong>Pégalo donde quieras:</strong> Abre tu red social o chat preferido y pega el texto transformado.</li>
-            </ol>
-          </article>
-        </div>
-      </section>
+      <HowToUse 
+        title="¿Cómo funciona el conversor de letras?"
+        step1Title="1. Escribe o pega tu texto"
+        step1Desc="Introduce las palabras o frases que deseas transformar en la caja del conversor."
+        step2Title="2. Explora las variaciones"
+        step2Desc="La herramienta genera automáticamente decenas de estilos diferentes."
+        step3Title="3. Selecciona y copia"
+        step3Desc="Pulsa el botón de copiar al lado de tu variación elegida y pégala en cualquier red social."
+      />
+
 
       {/* Font vs Unicode explanation */}
       <section className={styles.section}>
