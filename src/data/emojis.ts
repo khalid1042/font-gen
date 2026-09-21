@@ -229,5 +229,31 @@ export const emojis: EmojiData[] = [
   { emoji: "🥐", name: "Croissant", keywords: ["desayuno", "pan", "croissant"], category: "🍔 Comida" },
   { emoji: "🥞", name: "Tortitas", keywords: ["desayuno", "dulce", "pancakes"], category: "🍔 Comida" },
   { emoji: "🥓", name: "Bacon", keywords: ["tocino", "carne", "bacon"], category: "🍔 Comida" },
-  { emoji: "🧀", name: "Queso", keywords: ["lácteo", "cheese"], category: "🍔 Comida" }
+  { emoji: "🧀", name: "Queso", keywords: ["lácteo", "cheese"], category: "🍔 Comida" },
+
+  // --- NEW EMOJIS (BATCH 2) ---
+  
+  // Fantasía & Magia
+  { emoji: "🐉", name: "Dragón", keywords: ["fantasía", "monstruo", "dragon"], category: "✨ Aesthetic" },
+  { emoji: "🦄", name: "Unicornio", keywords: ["magia", "caballo", "unicorn"], category: "✨ Aesthetic" },
+  { emoji: "🧛‍♂️", name: "Vampiro", keywords: ["drácula", "halloween", "vampire"], category: "😂 Humor" },
+  { emoji: "🧟‍♀️", name: "Zombi", keywords: ["muerto viviente", "zombie"], category: "😂 Humor" },
+  
+  // Naturaleza y Tiempo
+  { emoji: "⚡", name: "Rayo", keywords: ["electricidad", "tormenta", "lightning", "voltaje"], category: "🌸 Naturaleza" },
+  { emoji: "❄️", name: "Copo de nieve", keywords: ["frío", "invierno", "snow", "ice"], category: "🌸 Naturaleza" },
+  { emoji: "🌪️", name: "Tornado", keywords: ["viento", "tormenta", "tornado"], category: "🌸 Naturaleza" },
+  { emoji: "🌋", name: "Volcán", keywords: ["erupción", "lava", "volcano"], category: "🌸 Naturaleza" },
+  
+  // Música
+  { emoji: "🎵", name: "Nota musical", keywords: ["música", "canción", "music", "note"], category: "💎 Objetos" },
+  { emoji: "🎸", name: "Guitarra", keywords: ["música", "rock", "guitar"], category: "💎 Objetos" },
+  { emoji: "🎧", name: "Auriculares", keywords: ["música", "escuchar", "headphones"], category: "💎 Objetos" },
+  { emoji: "🎹", name: "Teclado musical", keywords: ["piano", "música", "keyboard"], category: "💎 Objetos" },
+  
+  // Bebidas
+  { emoji: "🧋", name: "Té de burbujas", keywords: ["boba", "bebida", "bubble tea"], category: "🍔 Comida" },
+  { emoji: "🧉", name: "Mate", keywords: ["bebida", "argentina", "mate"], category: "🍔 Comida" },
+  { emoji: "🍺", name: "Cerveza", keywords: ["alcohol", "fiesta", "beer"], category: "🎉 Fiesta" },
+  { emoji: "🍹", name: "Cóctel", keywords: ["bebida", "fruta", "cocktail"], category: "🎉 Fiesta" }
 ];
