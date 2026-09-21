@@ -118,7 +118,7 @@ export default function EmojisHubPage() {
 
             <h2>Diferencia entre emojis y símbolos</h2>
             <p>
-              Es común confundir los emojis con los símbolos. Los emojis son pictogramas coloridos que los dispositivos interpretan gráficamente (como ❤️ o 😂). Los símbolos suelen ser caracteres tipográficos monocromáticos (como ♡ o ✧). Si buscas caracteres decorativos para mezclar con texto, te recomendamos visitar nuestra sección de <Link href="/simbolos">símbolos para copiar y pegar</Link>.
+              Es común confundir los emojis con los símbolos. Los emojis son pictogramas coloridos que los dispositivos interpretan gráficamente (como ❤️ o 😂). Los símbolos suelen ser caracteres tipográficos monocromáticos (como ♡ o ✧). Si buscas caracteres decorativos para mezclar con texto, te recomendamos visitar nuestra sección de <Link href="/letras-para-instagram/simbolos-para-instagram">símbolos para copiar y pegar</Link>.
             </p>
 
             <h2>Preguntas frecuentes</h2>

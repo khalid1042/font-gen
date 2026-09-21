@@ -262,7 +262,7 @@ export default function NombresParaJuegosPage() {
             <details className={styles.faqItem}>
               <summary>¿Puedo crear nombres para clanes?</summary>
               <p>
-                Sí, dispones de una sección dedicada a escuadras e ideas de equipo en nuestro <Link href="/nombres-para-juegos/nombres-para-clanes/">generador de nombres para clanes</Link>.
+                Sí, dispones de una sección dedicada a escuadras e ideas de equipo en nuestro <Link href="/nombres-para-free-fire/clanes/">generador de nombres para clanes</Link>.
               </p>
             </details>
 

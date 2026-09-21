@@ -61,8 +61,6 @@ export default function SitemapPage() {
               <li><Link href="/letras-cursivas/">Letras Cursivas</Link>
                 <ul>
                   <li><Link href="/letras-cursivas/abecedario-cursivo/">Abecedario Cursivo</Link></li>
-                  <li><Link href="/letras-cursivas/letras-bonitas-cursivas/">Letras Bonitas Cursivas</Link></li>
-                  <li><Link href="/letras-cursivas/letras-cursivas-mayusculas/">Cursivas Mayúsculas</Link></li>
                 </ul>
               </li>
             </ul>
@@ -104,9 +102,6 @@ export default function SitemapPage() {
               <li><Link href="/nombres-para-juegos/">Nombres para Juegos</Link>
                 <ul>
                   <li><Link href="/nombres-para-juegos/nicks/">Nicks para Juegos</Link></li>
-                  <li><Link href="/nombres-para-juegos/apodos/">Apodos Pro</Link></li>
-                  <li><Link href="/nombres-para-juegos/nombres-para-clanes/">Clanes</Link></li>
-                  <li><Link href="/nombres-para-juegos/nombres-chidos/">Nombres Chidos</Link></li>
                 </ul>
               </li>
             </ul>

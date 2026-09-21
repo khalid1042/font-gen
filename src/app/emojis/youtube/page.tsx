@@ -131,7 +131,7 @@ export default function YouTubeEmojisPage() {
             <p>Dependen del dispositivo del usuario. Alguien que vea YouTube en una Smart TV, un iPhone o un PC con Windows verá versiones ligeramente diferentes del mismo carácter, pero la idea (por ejemplo, "fuego" 🔥) se mantendrá.</p>
 
             <h3>¿Puedo incluir símbolos decorativos en lugar de emojis coloridos?</h3>
-            <p>Sí, y muchas veces es una opción muy elegante para canales minimalistas. Si prefieres caracteres en blanco y negro como ★ o ✦, te invitamos a usar nuestra herramienta de <Link href="/simbolos">símbolos</Link>.</p>
+            <p>Sí, y muchas veces es una opción muy elegante para canales minimalistas. Si prefieres caracteres en blanco y negro como ★ o ✦, te invitamos a usar nuestra herramienta de <Link href="/letras-para-instagram/simbolos-para-instagram">símbolos</Link>.</p>
 
             <h2>Conclusión</h2>
             <p>

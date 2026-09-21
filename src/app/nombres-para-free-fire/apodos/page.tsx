@@ -181,7 +181,7 @@ export default function ApodosPage() {
               </li>
             </ul>
             <p>
-              En nuestra plataforma puedes explorar colecciones especializadas como nuestros <Link href="/nombres-para-free-fire/nombres-insanos/">nombres insanos para Free Fire</Link> o explorar el catálogo completo en nuestra sección de <Link href="/nombres-para-free-fire/nombres/">nombres para Free Fire</Link>.
+              En nuestra plataforma puedes explorar colecciones especializadas como nuestros <Link href="/nombres-para-free-fire/nombres-insanos/">nombres insanos para Free Fire</Link> o explorar el catálogo completo en nuestra sección de <Link href="/nombres-para-free-fire/">nombres para Free Fire</Link>.
             </p>
 
             <h2>¿Cómo elegir un buen apodo para Free Fire?</h2>
